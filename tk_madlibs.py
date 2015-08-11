@@ -25,18 +25,21 @@ class MadLibs(Frame):
 
 		# create game directions
 		ent_form = Frame(self).pack(side=LEFT)
-		directions = Label(ent_form, text='Fill in the blanks!', height=2)
-		directions.pack(side=TOP)
+		directions = Label(ent_form, text='Fill in the blanks!', height=2).pack(side=TOP)
 		# creates the form for word entries
-		self.entries = self.makeform(ent_form)	
+		entries = self.makeform(ent_form)	
 		# creates a button to start the story
 		but = Button(ent_form, text='Tell me a story!', height=2, command=(lambda: self.fetch(story_box)))
 		but.pack(side=TOP, fill=BOTH)
 
 		# creates a storybox to display the story
 		story_frm = Frame(self).pack(side=RIGHT)
-		story_box = Text(story_frm, bd=2, height=20, width=80, wrap=WORD)
+		sbar = Scrollbar(story_frm)
+		story_box = Text(story_frm, bd=2, height=20, width=80, wrap=WORD, relief=SUNKEN)
 		story_box.insert(1.0, 'Story will go here')
+		sbar.config(command=story_box.yview)
+		story_box.config(yscrollcommand=sbar.set)
+		sbar.pack(side=RIGHT, fill=Y)
 		story_box.pack(side=TOP)
 		btn_frm = Frame(story_frm).pack(side=TOP)
 		Quitter(btn_frm).pack(side=LEFT)
