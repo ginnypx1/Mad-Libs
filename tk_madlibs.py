@@ -1,51 +1,59 @@
-from tkinter import *
 from quitter import Quitter
+from tkinter import *
+
 
 class MadLibs(Frame):
-	"""creates a mad libs of 'Goldilocks & the 3 Bears'"""
+	"""creates a mad lib of 'Goldilocks & the 3 Bears'"""
 	def __init__(self, parent=None):
 		Frame.__init__(self, parent)
+
 		# game variables
 		self.count = 0
 		self.ent_answers = []
 		self.answers = {}
 		self. questions = ["What is your name?",
-						"What's your favorite animal?",
-						"Name a place you want to go:",
-						"What would you like to eat?",
-						"Adjective please:",
-						"Another adjective:",
-						"Name a thing:",
-						"Adjective please:",
-						"Another adjective:",
-						"Another object please:",
-						"Yet another adjective:",
-						"Last adjective, I promise:"]
+							"What's your favorite animal?",
+							"Name a place you want to go:",
+							"What would you like to eat?",
+							"Adjective please:",
+							"Another adjective:",
+							"Name a thing:",
+							"Adjective please:",
+							"Another adjective:",
+							"Another object please:",
+							"Yet another adjective:",
+							"Last adjective, I promise:"]
 		self.story = []
 
 		# create game directions
 		ent_form = Frame(self).pack(side=LEFT)
-		directions = Label(ent_form, text='Fill in the blanks!', height=2).pack(side=TOP)
+		directions = Label(ent_form, text='Fill in the blanks!')
+		directions.config(bg='firebrick', fg='white', height=2)
+		directions.pack(side=TOP, pady=10, fill=BOTH)
+
 		# creates the form for word entries
-		entries = self.makeform(ent_form)	
+		entries = self.makeform(ent_form)
+
 		# creates a button to start the story
-		but = Button(ent_form, text='Tell me a story!', height=2, command=(lambda: self.fetch(story_box)))
-		but.pack(side=TOP, fill=BOTH)
+		but = Button(ent_form, text='TELL ME A STORY!')
+		but.config(command=(lambda: self.fetch(story_box)))
+		but.pack(side=TOP, fill=BOTH, pady=10)
 
 		# creates a storybox to display the story
 		story_frm = Frame(self).pack(side=RIGHT)
 		sbar = Scrollbar(story_frm)
-		story_box = Text(story_frm, bd=2, height=20, width=80, wrap=WORD, relief=SUNKEN)
-		story_box.insert(1.0, 'Story will go here')
+		story_box = Text(story_frm, bd=2, height=20, width=80)
+		story_box.config(wrap=WORD, relief=SUNKEN, fg='navy', bg='ivory')
 		sbar.config(command=story_box.yview)
 		story_box.config(yscrollcommand=sbar.set)
 		sbar.pack(side=RIGHT, fill=Y)
 		story_box.pack(side=TOP)
 		btn_frm = Frame(story_frm).pack(side=TOP)
 		Quitter(btn_frm).pack(side=LEFT)
-		pg1_btn = Button(btn_frm, text='Keep going!', command=(lambda: self.tell_story(story_box))).pack(side=RIGHT)
+		pg1_btn = Button(btn_frm, text='TELL ME MORE!')
+		pg1_btn.config(command=(lambda: self.tell_story(story_box)))
+		pg1_btn.pack(side=RIGHT)
 
-	# create a button to store variables
 	def fetch(self, story_tag):
 		"stores variables and starts the story"
 		# stores all the answers into the self.answers dictionary
@@ -54,15 +62,17 @@ class MadLibs(Frame):
 		self.generate_story()
 		# starts the story
 		return self.tell_story(story_tag)
-		
+
 	def makeform(self, ent_tag):
 		"creates the answer form"
 		for question in self.questions:
 			row = Frame(ent_tag)
 			lab = Label(row, text=question)
 			ent = Entry(row)
-			row.pack(side=TOP, fill=X)
-			lab.pack(side=LEFT)
+			lab.config(bg='orange', fg='white', width=40)
+			ent.config(bg='light goldenrod yellow', fg='dark green', width=20)
+			row.pack(side=TOP, padx=10)
+			lab.pack(side=LEFT, fill=X)
 			ent.pack(side=RIGHT)
 			self.ent_answers.append(ent)
 		return self.ent_answers
@@ -76,9 +86,9 @@ class MadLibs(Frame):
 		x = list(z)
 		self.answers = dict(zip(x, y))
 		return self.answers
-		#for k, v in self.answers.items():
-		#	print('Input => {}: {}'.format(k, v))
-		
+		# for k, v in self.answers.items():
+		#     print('Input => {}: {}'.format(k, v))
+
 	def tell_story(self, story_tag):
 		"displays the story in portions"
 		# puts story into the story box
@@ -140,7 +150,7 @@ They decided to look around some more and when they got upstairs to the bedroom,
 
 "Someone's been sleeping in my {} and they're still there!" exclaimed Baby {}.
 """.format(self.answers[0], self.answers[1], self.answers[3], self.answers[1], self.answers[3], self.answers[1], self.answers[3], self.answers[1], self.answers[6], self.answers[1], self.answers[6], self.answers[1], self.answers[6], self.answers[1], self.answers[1], self.answers[9], self.answers[9], self.answers[1], self.answers[9], self.answers[1]),
-"""Just then, {} woke up and saw the three {}s. {} screamed, "Help!" and jumped up and ran out of the room. {} ran down the stairs, opened the door, and ran away into the forest. And {} never returned to the home of the three {}s. 
+"""Just then, {} woke up and saw the three {}s. {} screamed, "Help!" and jumped up and ran out of the room. {} ran down the stairs, opened the door, and ran away into the forest. And {} never returned to the home of the three {}s.
 
 But the three {}s never stopped hunting them, not until they day they all died.
 
@@ -152,7 +162,7 @@ THE END""".format(self.answers[0], self.answers[1], self.answers[0], self.answer
 
 if __name__ == '__main__':
 	root = Tk()
-	root.title('Mad Libs!')
+	root.title('Mad Libs')
 	ml = MadLibs(root)
 	ml.pack(side=TOP)
 	root.mainloop()
