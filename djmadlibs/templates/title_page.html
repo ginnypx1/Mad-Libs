@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+
+{% block title %}MadLibs{% endblock %}
+
+{% block content %}
+<h1>MadLibs!</h1>
+
+<div id="intro">
+	<p>Are you ready to tell</p>
+	<p>one super silly story?</p>
+</div>
+
+<div id="start-button">
+	<a href="{% url 'madlibs:story' %}">Let's Do This!</a>
+</div>
+{% endblock %}

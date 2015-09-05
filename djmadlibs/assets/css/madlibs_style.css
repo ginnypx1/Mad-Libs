@@ -1,0 +1,189 @@
+/********************************
+STANDARD PAGE RULES
+*********************************/
+* {
+	margin:0;
+	padding:0;
+} 
+html,
+body {
+	height: 100%;
+	text-align: center;
+}
+/*******************************
+BOX SIZING
+*******************************/
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;   
+    box-sizing: border-box;   /* Everything else */
+}
+/*******************************
+FONTS
+*******************************/
+html {
+	font-family: Courier, serif;
+	font-size: 16px;
+}
+h1 {
+	font-size: 4em;
+}
+#form-dirs,
+#start-button {
+	font-size: 2em;
+}
+#intro {
+	font-size: 1.5em;
+}
+input,
+.pform,
+#story p,
+#tell-story,
+#play-again {
+	font-size: 1.25em;
+}
+/********************************
+COLORS
+*********************************/
+h1 {
+	background-color: #0A868E; /* blue */
+	color: #E7CA28; /* yellow */
+}
+#intro {
+	background-color: #E7CA28; /* yellow */
+	color: #0A868E; /* blue */
+}
+#start-button,
+#tell-story,
+#play-again {
+	background-color: #50B04E; /* green */
+	color: white;
+}
+input {
+	background-color: #C6C1A3; /* grey */
+	color: #0A868E; /* blue */
+}
+.pform,
+strong {
+	color: #50B04E; /* green */
+}
+#story p {
+	color: #0A868E; /* blue */;
+}
+form,
+#story {
+	background-color: #E5DEC4; /* cream */
+}
+/********************************
+ LINK PROPERTIES
+*********************************/
+a:link, 
+a:visited {
+	text-decoration:none;
+	border: none;
+	color: #E5DEC4; /* cream */
+	}
+ 
+a:hover, 
+a:active {
+	color: #E7CA28; /* yellow */
+	}
+/********************************
+SIZING
+*********************************/
+body {
+	margin-top: 20px;
+	max-width: 1000px;
+}
+h1,
+#intro,
+#start-button {
+	width: 450px;
+	margin: 0 auto;
+}
+h1 {
+	height: 150px;
+}
+#intro {
+	height: 150px;
+}
+#start-button {
+	height: 150px;
+}
+#form-dirs {
+	width: 800px;
+	height: 75px;
+}
+form,
+#story {
+	width: 800px;
+	margin: 0 auto;
+}
+input,
+.pform {
+	display: inline-block;
+}
+input {
+	width: 250px;
+}
+#tell-story,
+#play-again {
+	width: 200px;
+}
+/********************************
+PADDING
+*********************************/
+#intro p,
+#story p,
+input {
+	padding: 5px;
+}
+#tell-story,
+#play-again {
+	padding: 10px;
+}
+#start-button {
+	padding: 50px 25px;
+}
+h1 {
+	padding: 50px 25px 25px 25px;
+}
+#intro,
+#form-dirs {
+	padding: 25px;
+}
+input,
+.pform,
+#tell-story,
+#play-again {
+	margin: 5px;
+}
+/********************************
+BORDERS
+*********************************/
+h1,
+#intro,
+#start-button,
+form,
+#tell-story,
+#play-again,
+#story {
+	border: 2px solid #C6C1A3; /* grey */
+}
+h1 {
+	border-radius: 250px 250px 0 0;
+}
+#start-button {
+	border-radius: 0 0 250px 250px;
+}
+#story,
+form {
+	border-radius: 0 0 25px 25px;
+}
+#tell-story,
+#play-again {
+	border-radius: 25px;
+}
+input {
+	border-radius: 10px;
+}
