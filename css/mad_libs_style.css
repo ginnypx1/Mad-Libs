@@ -23,7 +23,22 @@ ul li {
     margin-bottom: 0px;
 }
 /*FONTS___________________*/
-
+h1 {
+    font-family: 'Londrina Outline', cursive;
+    font-size: 4em;
+}
+h2,
+.left-form,
+.navbar-right {
+    font-family: 'Cutive Mono';
+}
+.right-story,
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar-brand {
+    font-size: 1.5em;
+}
 /*COLORS___________________*/
 
 /*SPACING___________________*/
