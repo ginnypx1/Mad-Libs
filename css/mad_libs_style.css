@@ -32,6 +32,9 @@ h2,
 .navbar-right {
     font-family: 'Cutive Mono';
 }
+h5 {
+    color: green;
+}
 .right-story,
 .navbar-brand {
     font-family: 'Montserrat', sans-serif;
