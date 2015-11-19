@@ -11,10 +11,16 @@
 	/*body {
 		background-color: orange;
 	}*/
+	.right-story {
+		min-height: 1800px;
+	}
+	.secondary {
+		min-height: 400px;
+	}
 }
 
 /*TABLETS*/
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
 	/*body {
 		background-color: yellow;
 	}*/
@@ -33,5 +39,8 @@
 	img {
 		width: 50%;
 		height: 50%;
+	}
+	h1 {
+		font-size: 3em;	
 	}
 }

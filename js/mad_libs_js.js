@@ -49,7 +49,6 @@ $("#tell-story").click(function () {
     tellStory();
     $("#play-again").show();
     $("#story").show();
-    //$(".left-form").css("min-height", "1200px");
     $("h1").css("font-size", "8em");
     $(".right-story").css("min-height", "1500px");
     $(function() {
