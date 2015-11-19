@@ -40,7 +40,12 @@ h2,
     font-size: 1.5em;
 }
 /*COLORS___________________*/
-
+.left-form {
+    background-image: url('../img/pink_rice.png');
+}
+.right-story {
+    background-image: url('../img/confectionary.png');
+}
 /*SPACING___________________*/
 
 /*ICONS___________________*/
