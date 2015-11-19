@@ -47,7 +47,16 @@ $("#tell-story").click(function () {
     $("#form").hide();
     $("#tell-story").hide();
     tellStory();
+    $("#play-again").show();
     $("#story").show();
+    //$(".left-form").css("min-height", "1200px");
+    $("h1").css("font-size", "8em");
+    $(".right-story").css("min-height", "1500px");
+    $(function() {
+        $('.left-form').matchHeight({
+            target: $('.right-story')
+        });
+    });
 }); // end function submit-form
 
 $("#play-again").click(function() {

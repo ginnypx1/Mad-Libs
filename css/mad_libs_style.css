@@ -2,9 +2,6 @@
 html {
     font-size: 16px;
 }
-html, body {
-    overflow-x: hidden;
-}
 button {
     -webkit-appearance: none;
     border-radius: 0;
@@ -23,9 +20,12 @@ ul li {
     margin-bottom: 0px;
 }
 /*FONTS___________________*/
+footer {
+    text-align: center;
+}
 h1 {
     font-family: 'Londrina Outline', cursive;
-    font-size: 4em;
+    font-size: 6em;
 }
 h2,
 .left-form,
@@ -39,6 +39,12 @@ h2,
 .navbar-brand {
     font-size: 1.5em;
 }
+.right-story {
+    text-align: justify;
+}
+.right-story p {
+    padding: 2px;
+}
 /*COLORS___________________*/
 .left-form {
     background-image: url('../img/pink_rice.png');
@@ -46,8 +52,38 @@ h2,
 .right-story {
     background-image: url('../img/confectionary.png');
 }
+a:link,
+a:visited,
+footer {
+    color: #339933; /* green */
+}
+a:hover,
+a:active,
+button {
+    color: #006699; /* blue */
+}
+h1,
+#story strong {
+    color: #FF6600; /* orange */
+}
+.left-form {
+    font-size: 1em;
+}
 /*SPACING___________________*/
-
+button {
+    margin: 10px 0;
+    padding: 5px;
+}
+.left-form {
+    padding-left: 2.5%;
+}
+.left-form,
+.right-story {
+    min-height: 700px;
+}
+.right-story {
+    padding-top: 5px;
+}
 /*ICONS___________________*/
 @font-face {
     font-family: 'icomoon';
