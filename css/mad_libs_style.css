@@ -82,6 +82,7 @@ button {
 }
 .left-form,
 .right-story {
+    height: 100%;
     min-height: 700px;
 }
 .right-story {
