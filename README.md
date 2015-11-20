@@ -8,3 +8,5 @@ This mad lib can be played in three versions:
   - djmadlibs runs a django web app of the game
 
 ** later versions of this game will offer alternate stories
+
+Check this project out at: ginnypx1.github.io/Mad-Libs
