@@ -9,4 +9,4 @@ This mad lib can be played in three versions:
 
 ** later versions of this game will offer alternate stories
 
-Check this project out at: ginnypx1.github.io/Mad-Libs
+Check this project out at: <a href="http://ginnypx1.github.io/Mad-Libs">http://ginnypx1.github.io/Mad-Libs</a>
