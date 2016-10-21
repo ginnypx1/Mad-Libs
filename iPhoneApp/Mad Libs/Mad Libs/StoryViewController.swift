@@ -8,7 +8,6 @@
 
 import UIKit
 
-var answers: [String] = []
 
 class StoryViewController: UIViewController {
 
@@ -20,6 +19,7 @@ class StoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        generateStory()
         // display the title
         lblStoryText.text = story[0]
         lblStoryText.textColor = UIColor.orange
@@ -47,18 +47,19 @@ class StoryViewController: UIViewController {
     @IBAction func btnTellMeMoreACTION(_ sender: AnyObject) {
         storyPage += 1
         
-        if storyPage == 9 {
+        if storyPage == (story.count - 1) {
             // Diplay THE END and PLAY AGAIN
             lblStoryText.text = story[storyPage]
             lblStoryText.textColor = UIColor.orange
             lblStoryText.textAlignment = .center
             lblStoryText.font = lblStoryText.font.withSize(33)
             btnTellMeMore.setTitle("Play Again", for: UIControlState.normal)
-        } else if storyPage == 10 {
+        } else if storyPage == story.count {
             // reset game and return to home screen
             storyPage = 0
             timesViewed = 0
-            answers = []
+            answers.removeAll()
+            story.removeAll()
             // segue to initial view controller
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
             let nextViewController = storyBoard.instantiateViewController(withIdentifier: "questionView") as! ViewController
