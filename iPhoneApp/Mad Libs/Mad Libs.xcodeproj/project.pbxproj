@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3498A2B61DBA957800009C1F /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498A2B51DBA957800009C1F /* StoryViewController.swift */; };
 		34AC65621DB6BD420002CE4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC65611DB6BD420002CE4F /* AppDelegate.swift */; };
 		34AC65641DB6BD420002CE4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AC65631DB6BD420002CE4F /* ViewController.swift */; };
 		34AC65671DB6BD420002CE4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34AC65651DB6BD420002CE4F /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3498A2B51DBA957800009C1F /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		34AC655E1DB6BD420002CE4F /* Mad Libs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mad Libs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34AC65611DB6BD420002CE4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34AC65631DB6BD420002CE4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,11 +60,12 @@
 			children = (
 				34AC65611DB6BD420002CE4F /* AppDelegate.swift */,
 				34AC65631DB6BD420002CE4F /* ViewController.swift */,
+				3498A2B51DBA957800009C1F /* StoryViewController.swift */,
+				34AC65731DB6BD6C0002CE4F /* Story.swift */,
 				34AC65651DB6BD420002CE4F /* Main.storyboard */,
 				34AC65681DB6BD420002CE4F /* Assets.xcassets */,
 				34AC656A1DB6BD420002CE4F /* LaunchScreen.storyboard */,
 				34AC656D1DB6BD420002CE4F /* Info.plist */,
-				34AC65731DB6BD6C0002CE4F /* Story.swift */,
 			);
 			path = "Mad Libs";
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3498A2B61DBA957800009C1F /* StoryViewController.swift in Sources */,
 				34AC65641DB6BD420002CE4F /* ViewController.swift in Sources */,
 				34AC65621DB6BD420002CE4F /* AppDelegate.swift in Sources */,
 				34AC65741DB6BD6C0002CE4F /* Story.swift in Sources */,
@@ -301,6 +305,7 @@
 				34AC65721DB6BD420002CE4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
