@@ -49,7 +49,8 @@ h5 {
     padding: 2px;
 }
 /*COLORS___________________*/
-.left-form {
+.left-form,
+#app-highlight {
     background-image: url('../img/pink_rice.png');
 }
 .right-story {
@@ -87,6 +88,18 @@ button {
 }
 .right-story {
     padding-top: 5px;
+}
+#app-text {
+    padding-top: 0.5rem;
+}
+/*FLEXBOX___________________*/
+#screenshot-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#screenshot-gallery img {
+    padding: 1rem;
 }
 /*ICONS___________________*/
 @font-face {
