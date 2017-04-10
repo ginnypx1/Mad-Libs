@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mad Libs | About</title>
+    <title>Mad Libs</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -24,24 +24,27 @@
         </div>
     </nav>
 
-    <div class="left-form col-md-6 secondary">
-        <h1>Mad Libs</h1>
-        <p>This Mad Libs fills in the classic story "<span class="title">Goldilocks &amp; the Three Bears</span>". Why? Because my four-year-old son is obsessed with it. He thinks it's the funniest story he's ever heard in his whole life. </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="img/" alt="Crazy bear logo for MadLibs">
+                <br>
+                <br>
+                <p>"Guess My Number" plays a simple game of guess my number.</p>
+                <p>Can you guess the number I'm thinking of between 1 and 10?</p>
+            </div>
+        </div>
+
+        <div class="directions col-md-4">
+                <img src="img/app-screenshots/4.7-inch Screenshot 1.jpg" alt="Screenshot mid-game of Guess My Number">
+            </div>
+
+            <div class="directions col-md-4">
+                <img src="img/app-screenshots1/4.7-inch Screenshot 1.jpg" alt="Screenshot of a Guess My Number win">
+            </div>
     </div>
 
-    <div class="right-story col-md-6 secondary">
-        <p>I created this version of Mad Libs to help me practice Python in several forms.</p>
-        <p>You can see the evolution of the project in my <a href="https://github.com/ginnypx1/Mad-Libs">Github repository:</a></p>
-        <ul class="versions">
-            <li><strong>iPhoneApp/MadLibs/MadLibs.xcodeproj</strong> plays an iPhone version of Mad Libs.</li>
-            <li><strong>madlibs.py</strong> fills out the story in the command line.</li>
-            <li><strong>tk_madlibs.py</strong> fills out the story in a Tkinter widget.</li>
-            <li><strong>djmadlibs</strong> runs a django version of Mad Libs.</li>
-        </ul>
-        <p>Future versions will update the Mad Libs prototype so users can select one of many stories.</p>
-    </div>
-
-    <footer class="site-footer">
+    <footer>
         <p>Ghostbird Games</p>
     </footer>
 
@@ -49,6 +52,5 @@
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/jquery.matchHeight-min.js" type="text/javascript"></script>
     <script src="js/match_height.js" type="text/javascript"></script>
-    <script src="js/mad_libs_js.js" type="text/javascript"></script>
 </body>
 </html>
