@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="questionView" id="BYZ-38-t0r" customClass="ViewController" customModule="MadLibs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fill In The Blanks!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G3Q-c3-Z9j">
+                                <rect key="frame" x="0.0" y="20" width="320" height="57"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="38"/>
+                                <color key="textColor" red="0.94099718332290649" green="0.48483365774154663" blue="0.46847939491271973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7Tf-VD-R1W">
+                                <rect key="frame" x="16" y="85" width="288" height="418"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="as0-LH-UUD">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="205"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bPg-GX-9jn">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="27.5"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mkj-CJ-115">
+                                                <rect key="frame" x="0.0" y="35.5" width="288" height="27.5"/>
+                                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="0.25066887842465746" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdK-fT-hAn">
+                                                <rect key="frame" x="0.0" y="71" width="288" height="27.5"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PE6-zK-kXr">
+                                                <rect key="frame" x="0.0" y="106.5" width="288" height="27.5"/>
+                                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="0.25066887842465746" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wqp-Tb-4rg">
+                                                <rect key="frame" x="0.0" y="142" width="288" height="27.5"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tEx-eB-n5M">
+                                                <rect key="frame" x="0.0" y="177.5" width="288" height="27.5"/>
+                                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="0.25066887842465746" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="px8-vH-E8P">
+                                        <rect key="frame" x="0.0" y="213" width="288" height="205"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agM-K1-1MZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="288" height="27.5"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cgZ-YB-VmK">
+                                                <rect key="frame" x="0.0" y="35.5" width="288" height="27.5"/>
+                                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="0.24914383561643835" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8sL-Vw-cIy">
+                                                <rect key="frame" x="0.0" y="71" width="288" height="27.5"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uYI-s8-eVo">
+                                                <rect key="frame" x="0.0" y="106.5" width="288" height="27.5"/>
+                                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="0.24914383561643835" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Gr-Nc-8Q5">
+                                                <rect key="frame" x="0.0" y="142" width="288" height="27.5"/>
+                                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QFW-rN-Bcm">
+                                                <rect key="frame" x="0.0" y="177.5" width="288" height="27.5"/>
+                                                <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="0.24914383561643835" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <variation key="heightClass=compact-widthClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=compact-widthClass=regular" axis="horizontal"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeB-tq-xAb">
+                                <rect key="frame" x="0.0" y="511" width="320" height="57"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                <state key="normal" title="Keep Going">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnKeepGoingACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h4D-x3-649"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="G3Q-c3-Z9j" secondAttribute="trailing" id="6De-7F-uzJ"/>
+                            <constraint firstItem="7Tf-VD-R1W" firstAttribute="top" secondItem="G3Q-c3-Z9j" secondAttribute="bottom" constant="8" id="7sz-GB-fak"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WeB-tq-xAb" secondAttribute="bottom" id="8Em-YA-xoc"/>
+                            <constraint firstItem="WeB-tq-xAb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="EGh-Ff-aUX"/>
+                            <constraint firstItem="7Tf-VD-R1W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Hj8-VA-dWm"/>
+                            <constraint firstAttribute="trailing" secondItem="WeB-tq-xAb" secondAttribute="trailing" id="LFf-Tp-Gaf"/>
+                            <constraint firstItem="G3Q-c3-Z9j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="NkB-Gq-ili"/>
+                            <constraint firstAttribute="trailing" secondItem="7Tf-VD-R1W" secondAttribute="trailing" constant="16" id="RYm-eE-jbv"/>
+                            <constraint firstItem="WeB-tq-xAb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="d3k-8y-oPV"/>
+                            <constraint firstItem="WeB-tq-xAb" firstAttribute="top" secondItem="7Tf-VD-R1W" secondAttribute="bottom" constant="8" id="epT-OV-mfn"/>
+                            <constraint firstItem="G3Q-c3-Z9j" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hSq-o5-8zP"/>
+                            <constraint firstItem="G3Q-c3-Z9j" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="zCy-9D-8yo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnKeepGoing" destination="WeB-tq-xAb" id="zeJ-JU-yn7"/>
+                        <outletCollection property="lblQuestionLabels" destination="bPg-GX-9jn" collectionClass="NSMutableArray" id="m4q-Qk-M4N"/>
+                        <outletCollection property="lblQuestionLabels" destination="tdK-fT-hAn" collectionClass="NSMutableArray" id="Nw1-1T-JVj"/>
+                        <outletCollection property="lblQuestionLabels" destination="wqp-Tb-4rg" collectionClass="NSMutableArray" id="eAS-Gy-Bqh"/>
+                        <outletCollection property="lblQuestionLabels" destination="agM-K1-1MZ" collectionClass="NSMutableArray" id="bEa-vY-oUQ"/>
+                        <outletCollection property="lblQuestionLabels" destination="8sL-Vw-cIy" collectionClass="NSMutableArray" id="XZm-qv-hjF"/>
+                        <outletCollection property="lblQuestionLabels" destination="7Gr-Nc-8Q5" collectionClass="NSMutableArray" id="k4d-1a-tWa"/>
+                        <outletCollection property="txtQuestionTextField" destination="Mkj-CJ-115" collectionClass="NSMutableArray" id="gKX-NW-Nl4"/>
+                        <outletCollection property="txtQuestionTextField" destination="PE6-zK-kXr" collectionClass="NSMutableArray" id="MRq-kT-kmu"/>
+                        <outletCollection property="txtQuestionTextField" destination="tEx-eB-n5M" collectionClass="NSMutableArray" id="FV9-ta-f7L"/>
+                        <outletCollection property="txtQuestionTextField" destination="cgZ-YB-VmK" collectionClass="NSMutableArray" id="4Ew-av-0jd"/>
+                        <outletCollection property="txtQuestionTextField" destination="uYI-s8-eVo" collectionClass="NSMutableArray" id="0d2-t8-bON"/>
+                        <outletCollection property="txtQuestionTextField" destination="QFW-rN-Bcm" collectionClass="NSMutableArray" id="pkf-AW-SBd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Story View Controller-->
+        <scene sceneID="zzz-TW-TKc">
+            <objects>
+                <viewController storyboardIdentifier="storyView" id="diY-iy-RDE" customClass="StoryViewController" customModule="MadLibs" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5KN-Vz-acn"/>
+                        <viewControllerLayoutGuide type="bottom" id="HTa-pB-lHb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2uc-Dy-6dM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhH-Z8-uDU">
+                                <rect key="frame" x="0.0" y="511" width="320" height="57"/>
+                                <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                <state key="normal" title="Tell Me More">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnTellMeMoreACTION:" destination="diY-iy-RDE" eventType="touchUpInside" id="XJf-7h-eiU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iFR-c7-2vG">
+                                <rect key="frame" x="16" y="28" width="288" height="475"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iFR-c7-2vG" firstAttribute="top" secondItem="5KN-Vz-acn" secondAttribute="bottom" constant="8" id="1s2-na-q0P"/>
+                            <constraint firstItem="QhH-Z8-uDU" firstAttribute="height" secondItem="2uc-Dy-6dM" secondAttribute="height" multiplier="0.1" id="7Mu-cb-IKQ"/>
+                            <constraint firstItem="QhH-Z8-uDU" firstAttribute="top" secondItem="iFR-c7-2vG" secondAttribute="bottom" constant="8" id="ELB-A7-8gV"/>
+                            <constraint firstItem="iFR-c7-2vG" firstAttribute="leading" secondItem="2uc-Dy-6dM" secondAttribute="leadingMargin" id="KXl-U3-JMG"/>
+                            <constraint firstItem="iFR-c7-2vG" firstAttribute="trailing" secondItem="2uc-Dy-6dM" secondAttribute="trailingMargin" id="LyI-Wm-m2g"/>
+                            <constraint firstAttribute="trailing" secondItem="QhH-Z8-uDU" secondAttribute="trailing" id="OK7-bw-U6q"/>
+                            <constraint firstItem="QhH-Z8-uDU" firstAttribute="leading" secondItem="2uc-Dy-6dM" secondAttribute="leading" id="d90-CY-YTt"/>
+                            <constraint firstItem="HTa-pB-lHb" firstAttribute="top" secondItem="QhH-Z8-uDU" secondAttribute="bottom" id="v6Z-RM-oGV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnTellMeMore" destination="QhH-Z8-uDU" id="Tcu-Uy-06P"/>
+                        <outlet property="lblStoryText" destination="iFR-c7-2vG" id="hfo-ji-CIw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yXC-Jc-oPN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="819.375" y="138.38028169014083"/>
+        </scene>
+    </scenes>
+</document>
