@@ -15,7 +15,18 @@
 		3431B4A11E9BC9C90057ADDC /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3431B4A01E9BC9C90057ADDC /* StoryViewController.swift */; };
 		3431B4A31E9BC9D90057ADDC /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3431B4A21E9BC9D90057ADDC /* Story.swift */; };
 		3431B4A51E9BD3E10057ADDC /* ExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3431B4A41E9BD3E10057ADDC /* ExtensionViewController.swift */; };
+		34407B171E9D5C4D006A34FF /* StoryModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34407B161E9D5C4D006A34FF /* StoryModelTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34407B111E9D5C1E006A34FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3431B4831E9BC63B0057ADDC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3431B48A1E9BC63B0057ADDC;
+			remoteInfo = MadLibs;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3431B48B1E9BC63B0057ADDC /* MadLibs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadLibs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +39,20 @@
 		3431B4A01E9BC9C90057ADDC /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		3431B4A21E9BC9D90057ADDC /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		3431B4A41E9BD3E10057ADDC /* ExtensionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionViewController.swift; sourceTree = "<group>"; };
+		34407B0C1E9D5C1C006A34FF /* MadLibsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MadLibsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34407B101E9D5C1E006A34FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34407B161E9D5C4D006A34FF /* StoryModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3431B4881E9BC63B0057ADDC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34407B091E9D5C1C006A34FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				3431B48D1E9BC63B0057ADDC /* MadLibs */,
+				34407B0D1E9D5C1E006A34FF /* MadLibsTests */,
 				3431B48C1E9BC63B0057ADDC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				3431B48B1E9BC63B0057ADDC /* MadLibs.app */,
+				34407B0C1E9D5C1C006A34FF /* MadLibsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +94,15 @@
 				3431B49A1E9BC63C0057ADDC /* Info.plist */,
 			);
 			path = MadLibs;
+			sourceTree = "<group>";
+		};
+		34407B0D1E9D5C1E006A34FF /* MadLibsTests */ = {
+			isa = PBXGroup;
+			children = (
+				34407B101E9D5C1E006A34FF /* Info.plist */,
+				34407B161E9D5C4D006A34FF /* StoryModelTests.swift */,
+			);
+			path = MadLibsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +125,24 @@
 			productReference = 3431B48B1E9BC63B0057ADDC /* MadLibs.app */;
 			productType = "com.apple.product-type.application";
 		};
+		34407B0B1E9D5C1C006A34FF /* MadLibsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34407B151E9D5C21006A34FF /* Build configuration list for PBXNativeTarget "MadLibsTests" */;
+			buildPhases = (
+				34407B081E9D5C1C006A34FF /* Sources */,
+				34407B091E9D5C1C006A34FF /* Frameworks */,
+				34407B0A1E9D5C1C006A34FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34407B121E9D5C1E006A34FF /* PBXTargetDependency */,
+			);
+			name = MadLibsTests;
+			productName = MadLibsTests;
+			productReference = 34407B0C1E9D5C1C006A34FF /* MadLibsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -107,6 +157,12 @@
 						CreatedOnToolsVersion = 8.3;
 						DevelopmentTeam = B875NM54ML;
 						ProvisioningStyle = Automatic;
+					};
+					34407B0B1E9D5C1C006A34FF = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = B875NM54ML;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3431B48A1E9BC63B0057ADDC;
 					};
 				};
 			};
@@ -124,6 +180,7 @@
 			projectRoot = "";
 			targets = (
 				3431B48A1E9BC63B0057ADDC /* MadLibs */,
+				34407B0B1E9D5C1C006A34FF /* MadLibsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +193,13 @@
 				3431B4991E9BC63C0057ADDC /* LaunchScreen.storyboard in Resources */,
 				3431B4961E9BC63C0057ADDC /* Assets.xcassets in Resources */,
 				3431B4941E9BC63B0057ADDC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34407B0A1E9D5C1C006A34FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +218,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34407B081E9D5C1C006A34FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34407B171E9D5C4D006A34FF /* StoryModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34407B121E9D5C1E006A34FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3431B48A1E9BC63B0057ADDC /* MadLibs */;
+			targetProxy = 34407B111E9D5C1E006A34FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3431B4921E9BC63B0057ADDC /* Main.storyboard */ = {
@@ -297,6 +377,34 @@
 			};
 			name = Release;
 		};
+		34407B131E9D5C21006A34FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B875NM54ML;
+				INFOPLIST_FILE = MadLibsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostbirdgames.MadLibsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MadLibs.app/MadLibs";
+			};
+			name = Debug;
+		};
+		34407B141E9D5C21006A34FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = B875NM54ML;
+				INFOPLIST_FILE = MadLibsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ghostbirdgames.MadLibsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MadLibs.app/MadLibs";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -314,6 +422,15 @@
 			buildConfigurations = (
 				3431B49E1E9BC63C0057ADDC /* Debug */,
 				3431B49F1E9BC63C0057ADDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34407B151E9D5C21006A34FF /* Build configuration list for PBXNativeTarget "MadLibsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34407B131E9D5C21006A34FF /* Debug */,
+				34407B141E9D5C21006A34FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
