@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AmericanTypewriter.ttc">
+            <string>AmericanTypewriter</string>
+            <string>AmericanTypewriter-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Form View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="questionView" id="BYZ-38-t0r" customClass="ViewController" customModule="MadLibs" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="questionView" id="BYZ-38-t0r" customClass="FormViewController" customModule="MadLibs" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -132,7 +138,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnKeepGoingACTION:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h4D-x3-649"/>
+                                    <action selector="tellStory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cI7-SJ-vDo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -153,19 +159,19 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnKeepGoing" destination="WeB-tq-xAb" id="zeJ-JU-yn7"/>
-                        <outletCollection property="lblQuestionLabels" destination="bPg-GX-9jn" collectionClass="NSMutableArray" id="m4q-Qk-M4N"/>
-                        <outletCollection property="lblQuestionLabels" destination="tdK-fT-hAn" collectionClass="NSMutableArray" id="Nw1-1T-JVj"/>
-                        <outletCollection property="lblQuestionLabels" destination="wqp-Tb-4rg" collectionClass="NSMutableArray" id="eAS-Gy-Bqh"/>
-                        <outletCollection property="lblQuestionLabels" destination="agM-K1-1MZ" collectionClass="NSMutableArray" id="bEa-vY-oUQ"/>
-                        <outletCollection property="lblQuestionLabels" destination="8sL-Vw-cIy" collectionClass="NSMutableArray" id="XZm-qv-hjF"/>
-                        <outletCollection property="lblQuestionLabels" destination="7Gr-Nc-8Q5" collectionClass="NSMutableArray" id="k4d-1a-tWa"/>
-                        <outletCollection property="txtQuestionTextField" destination="Mkj-CJ-115" collectionClass="NSMutableArray" id="gKX-NW-Nl4"/>
-                        <outletCollection property="txtQuestionTextField" destination="PE6-zK-kXr" collectionClass="NSMutableArray" id="MRq-kT-kmu"/>
-                        <outletCollection property="txtQuestionTextField" destination="tEx-eB-n5M" collectionClass="NSMutableArray" id="FV9-ta-f7L"/>
-                        <outletCollection property="txtQuestionTextField" destination="cgZ-YB-VmK" collectionClass="NSMutableArray" id="4Ew-av-0jd"/>
-                        <outletCollection property="txtQuestionTextField" destination="uYI-s8-eVo" collectionClass="NSMutableArray" id="0d2-t8-bON"/>
-                        <outletCollection property="txtQuestionTextField" destination="QFW-rN-Bcm" collectionClass="NSMutableArray" id="pkf-AW-SBd"/>
+                        <outlet property="keepGoingButton" destination="WeB-tq-xAb" id="9Al-yD-5v1"/>
+                        <outletCollection property="questionLabels" destination="bPg-GX-9jn" collectionClass="NSMutableArray" id="jUe-Jo-IOH"/>
+                        <outletCollection property="questionLabels" destination="tdK-fT-hAn" collectionClass="NSMutableArray" id="BbX-dM-N1R"/>
+                        <outletCollection property="questionLabels" destination="wqp-Tb-4rg" collectionClass="NSMutableArray" id="qyF-OR-p8q"/>
+                        <outletCollection property="questionLabels" destination="agM-K1-1MZ" collectionClass="NSMutableArray" id="8Uw-CF-Tdu"/>
+                        <outletCollection property="questionLabels" destination="8sL-Vw-cIy" collectionClass="NSMutableArray" id="M2R-46-aVf"/>
+                        <outletCollection property="questionLabels" destination="7Gr-Nc-8Q5" collectionClass="NSMutableArray" id="211-cM-8FW"/>
+                        <outletCollection property="questionTextFields" destination="Mkj-CJ-115" collectionClass="NSMutableArray" id="TQ6-FX-wgS"/>
+                        <outletCollection property="questionTextFields" destination="PE6-zK-kXr" collectionClass="NSMutableArray" id="MEt-sK-BUx"/>
+                        <outletCollection property="questionTextFields" destination="tEx-eB-n5M" collectionClass="NSMutableArray" id="ANv-EO-Bja"/>
+                        <outletCollection property="questionTextFields" destination="cgZ-YB-VmK" collectionClass="NSMutableArray" id="Z7L-dC-8p1"/>
+                        <outletCollection property="questionTextFields" destination="uYI-s8-eVo" collectionClass="NSMutableArray" id="R7L-Rc-Q2m"/>
+                        <outletCollection property="questionTextFields" destination="QFW-rN-Bcm" collectionClass="NSMutableArray" id="cNA-we-oHZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -184,6 +190,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iFR-c7-2vG">
+                                <rect key="frame" x="16" y="28" width="288" height="475"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhH-Z8-uDU">
                                 <rect key="frame" x="0.0" y="511" width="320" height="57"/>
                                 <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -192,15 +204,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnTellMeMoreACTION:" destination="diY-iy-RDE" eventType="touchUpInside" id="XJf-7h-eiU"/>
+                                    <action selector="tellStory:" destination="diY-iy-RDE" eventType="touchUpInside" id="KS9-q1-A2D"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iFR-c7-2vG">
-                                <rect key="frame" x="16" y="28" width="288" height="475"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -215,8 +221,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnTellMeMore" destination="QhH-Z8-uDU" id="Tcu-Uy-06P"/>
-                        <outlet property="lblStoryText" destination="iFR-c7-2vG" id="hfo-ji-CIw"/>
+                        <outlet property="storyTextLabel" destination="iFR-c7-2vG" id="edL-ME-4Sg"/>
+                        <outlet property="tellStoryButton" destination="QhH-Z8-uDU" id="JiO-a9-zPt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yXC-Jc-oPN" userLabel="First Responder" sceneMemberID="firstResponder"/>

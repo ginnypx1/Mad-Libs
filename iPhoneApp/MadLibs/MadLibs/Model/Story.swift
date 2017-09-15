@@ -10,7 +10,7 @@ import Foundation
 
 
 class Story {
-    var questions: [String] = [
+    let questions: [String] = [
         "What is your name?",
         "What's your favorite animal?",
         "Name a place you want to go:",

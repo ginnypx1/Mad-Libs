@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  FormViewController.swift
 //  MadLibs
 //
 //  Created by Ginny Pennekamp on 4/10/17.
@@ -8,26 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class FormViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - Outlets
     
-    @IBOutlet var lblQuestionLabels: [UILabel]!
-    @IBOutlet var txtQuestionTextField: [UITextField]!
-    @IBOutlet weak var btnKeepGoing: UIButton!
+    @IBOutlet var questionLabels: [UILabel]!
+    @IBOutlet var questionTextFields: [UITextField]!
+    @IBOutlet weak var keepGoingButton: UIButton!
     
     // MARK: - Properties
     
     var story: Story!
     var labelCount = 0
     
+    var textFieldDelegate = FormTextFieldDelegate()
+    
     // MARK: - View
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for textField in txtQuestionTextField {
-            textField.delegate = self
+        for textField in questionTextFields {
+            textField.delegate = textFieldDelegate
         }
         
         story = Story()
@@ -50,32 +52,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
         unsubscribeToKeyboardNotifications()
     }
     
-    // MARK: - Text Field Delegate
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
-    }
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for textField in self.view.subviews where textField is UITextField {
-            textField.resignFirstResponder()
-        }
-    }
-    
     // MARK: - Ask Questions
     
     func askQuestions() {
-        for lbl in lblQuestionLabels {
-            lbl.text = story.questions[labelCount]
+        for label in questionLabels {
+            label.text = story.questions[labelCount]
             labelCount += 1
         }
     }
     
     // MARK: - Tell Story
     
-    @IBAction func btnKeepGoingACTION(_ sender: AnyObject) {
-        for field in txtQuestionTextField {
+    @IBAction func tellStory(_ sender: UIButton) {
+        for field in questionTextFields {
             if let answer = field.text {
                 story.answers.append(answer)
             }
@@ -84,7 +73,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //print(answers)
         story.timesViewed += 1
         labelCount = 6
-        btnKeepGoing.setTitle("Tell Me A Story", for: UIControlState.normal)
+        keepGoingButton.setTitle("Tell Me A Story", for: UIControlState.normal)
         askQuestions()
         
         if story.timesViewed == 2 {
@@ -92,7 +81,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
             let storyView = storyBoard.instantiateViewController(withIdentifier: "storyView") as! StoryViewController
             storyView.story = self.story
-            self.present(storyView, animated:true, completion:nil)
+            storyView.modalTransitionStyle = .partialCurl
+            present(storyView, animated:true, completion:nil)
         }
     }
     
