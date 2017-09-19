@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34043D2E1F719E99006F2134 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34043D2D1F719E99006F2134 /* AnimationManager.swift */; };
 		3431B48F1E9BC63B0057ADDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3431B48E1E9BC63B0057ADDC /* AppDelegate.swift */; };
 		3431B4911E9BC63B0057ADDC /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3431B4901E9BC63B0057ADDC /* FormViewController.swift */; };
 		3431B4941E9BC63B0057ADDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3431B4921E9BC63B0057ADDC /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		34043D2D1F719E99006F2134 /* AnimationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
 		3431B48B1E9BC63B0057ADDC /* MadLibs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadLibs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3431B48E1E9BC63B0057ADDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3431B4901E9BC63B0057ADDC /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				34AB5B4C1F6C480B00D2541B /* View */,
 				34AB5B491F6C43A500D2541B /* Assets */,
 				3431B49A1E9BC63C0057ADDC /* Info.plist */,
+				34043D2D1F719E99006F2134 /* AnimationManager.swift */,
 			);
 			path = MadLibs;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				3431B4A51E9BD3E10057ADDC /* ExtensionFormViewController.swift in Sources */,
 				34AB5B4B1F6C479200D2541B /* FormTextFieldDelegate.swift in Sources */,
 				3431B4911E9BC63B0057ADDC /* FormViewController.swift in Sources */,
+				34043D2E1F719E99006F2134 /* AnimationManager.swift in Sources */,
 				3431B48F1E9BC63B0057ADDC /* AppDelegate.swift in Sources */,
 				3431B4A31E9BC9D90057ADDC /* Story.swift in Sources */,
 			);

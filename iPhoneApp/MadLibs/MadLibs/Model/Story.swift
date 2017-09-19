@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 class Story {
     let questions: [String] = [
         "What is your name?",

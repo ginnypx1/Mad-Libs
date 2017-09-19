@@ -17,65 +17,67 @@ class StoryViewController: UIViewController {
     
     // MARK: - Properties
     
-    var story: Story?
-    var storyPage = 0
+    var story: Story!
+    var storyPage: Int = 0
     
     // MARK: - View
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        guard let story = self.story else {
-            print("There is no story to tell.")
-            return
-        }
-        
         story.generateStory()
-        
-        // display the title
+        displayStoryTitle()
+    }
+    
+    // MARK: - Tell Story
+    
+    func displayStoryTitle() {
         storyTextLabel.text = story.story[0]
         storyTextLabel.textColor = UIColor.orange
         storyTextLabel.font = storyTextLabel.font.withSize(33)
-        
-        // btnTellMeMore text is "Tell My Story"
         tellStoryButton.setTitle("Tell My Story", for: UIControlState.normal)
     }
     
+    func displayEnd() {
+        storyTextLabel.text = story.story[storyPage]
+        storyTextLabel.textColor = UIColor.orange
+        storyTextLabel.textAlignment = .center
+        storyTextLabel.font = storyTextLabel.font.withSize(33)
+        tellStoryButton.setTitle("Play Again", for: UIControlState.normal)
+    }
+    
+    func displayNextPage() {
+        AnimationManager.positionStoryTextOffscreen(storyTextLabel)
+        storyTextLabel.text = story.story[storyPage]
+        storyTextLabel.textColor = UIColor.black
+        storyTextLabel.font = storyTextLabel.font.withSize(20)
+        storyTextLabel.textAlignment = .justified
+        tellStoryButton.setTitle("Tell Me More", for: UIControlState.normal)
+        AnimationManager.zoomStoryInFromRight(storyTextLabel)
+    }
+    
     @IBAction func tellStory(_ sender: UIButton) {
-        
-        guard let story = self.story else {
-            print("There is no story to tell.")
-            return
-        }
-        
+        // turn the page
         self.storyPage += 1
         
         if self.storyPage == (story.story.count - 1) {
-            // Diplay THE END and PLAY AGAIN
-            storyTextLabel.text = story.story[storyPage]
-            storyTextLabel.textColor = UIColor.orange
-            storyTextLabel.textAlignment = .center
-            storyTextLabel.font = storyTextLabel.font.withSize(33)
-            tellStoryButton.setTitle("Play Again", for: UIControlState.normal)
+            displayEnd()
         } else if self.storyPage == story.story.count {
-            // reset game and return to home screen
-            storyPage = 0
-            story.timesViewed = 0
-            story.answers.removeAll()
-            story.story.removeAll()
-            // segue to initial view controller
-            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-            let questionView = storyBoard.instantiateViewController(withIdentifier: "questionView") as! FormViewController
-            questionView.modalTransitionStyle = .partialCurl
-            present(questionView, animated:true, completion:nil)
+            resetStory()
         } else {
-            // display the next page of the story
-            storyTextLabel.text = story.story[storyPage]
-            storyTextLabel.textColor = UIColor.black
-            storyTextLabel.font = storyTextLabel.font.withSize(20)
-            storyTextLabel.textAlignment = .justified
-            tellStoryButton.setTitle("Tell Me More", for: UIControlState.normal)
+            displayNextPage()
         }
+    }
+    
+    // MARK: - Navigation
+    
+    func resetStory() {
+        storyPage = 0
+        story.timesViewed = 0
+        story.answers.removeAll()
+        story.story.removeAll()
+        
+        dismiss(animated:true, completion:nil)
     }
 
 }
