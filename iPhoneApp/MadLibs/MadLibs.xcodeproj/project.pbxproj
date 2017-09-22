@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		34043D2E1F719E99006F2134 /* AnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34043D2D1F719E99006F2134 /* AnimationManager.swift */; };
+		3404DF4A1F7597A9008BC4C2 /* FormViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3404DF491F7597A9008BC4C2 /* FormViewControllerTests.swift */; };
 		3431B48F1E9BC63B0057ADDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3431B48E1E9BC63B0057ADDC /* AppDelegate.swift */; };
 		3431B4911E9BC63B0057ADDC /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3431B4901E9BC63B0057ADDC /* FormViewController.swift */; };
 		3431B4941E9BC63B0057ADDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3431B4921E9BC63B0057ADDC /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		34043D2D1F719E99006F2134 /* AnimationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationManager.swift; sourceTree = "<group>"; };
+		3404DF491F7597A9008BC4C2 /* FormViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewControllerTests.swift; sourceTree = "<group>"; };
 		3431B48B1E9BC63B0057ADDC /* MadLibs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MadLibs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3431B48E1E9BC63B0057ADDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3431B4901E9BC63B0057ADDC /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			children = (
 				34407B101E9D5C1E006A34FF /* Info.plist */,
 				34407B161E9D5C4D006A34FF /* StoryModelTests.swift */,
+				3404DF491F7597A9008BC4C2 /* FormViewControllerTests.swift */,
 			);
 			path = MadLibsTests;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3404DF4A1F7597A9008BC4C2 /* FormViewControllerTests.swift in Sources */,
 				34407B171E9D5C4D006A34FF /* StoryModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
