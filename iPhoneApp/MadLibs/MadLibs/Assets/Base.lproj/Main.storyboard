@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -20,10 +21,6 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="questionView" id="BYZ-38-t0r" customClass="FormViewController" customModule="MadLibs" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,20 +33,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7Tf-VD-R1W">
-                                <rect key="frame" x="40" y="94.5" width="295" height="498"/>
+                                <rect key="frame" x="16" y="94.5" width="343" height="498"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="as0-LH-UUD">
-                                        <rect key="frame" x="0.0" y="0.0" width="295" height="245"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="245"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bPg-GX-9jn">
-                                                <rect key="frame" x="0.0" y="0.0" width="295" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="34"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Question One" identifier="Question1Label" label="Question 1 Label"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mkj-CJ-115">
-                                                <rect key="frame" x="0.0" y="42" width="295" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="42" width="343" height="34.5"/>
                                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="0.25066887842465746" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Question One Answer" identifier="Question1AnswerTextField" label="Question 1 Answer Text Field"/>
                                                 <color key="textColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -57,14 +54,14 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tdK-fT-hAn">
-                                                <rect key="frame" x="0.0" y="84.5" width="295" height="34"/>
+                                                <rect key="frame" x="0.0" y="84.5" width="343" height="34"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Question Two" identifier="Question2Label" label="Question 2 Label"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PE6-zK-kXr">
-                                                <rect key="frame" x="0.0" y="126.5" width="295" height="34"/>
+                                                <rect key="frame" x="0.0" y="126.5" width="343" height="34"/>
                                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="0.25066887842465746" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Question Two Answer" identifier="Question2AnswerTextField" label="Question 2 Answer Text Field"/>
                                                 <color key="textColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -72,14 +69,14 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wqp-Tb-4rg">
-                                                <rect key="frame" x="0.0" y="168.5" width="295" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="168.5" width="343" height="34.5"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Question Three" identifier="Question3Label" label="Question 3 Label"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tEx-eB-n5M">
-                                                <rect key="frame" x="0.0" y="211" width="295" height="34"/>
+                                                <rect key="frame" x="0.0" y="211" width="343" height="34"/>
                                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="0.25066887842465746" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Question Three Answer" identifier="Question3AnswerTextField" label="Question 3 Answer Text Field"/>
                                                 <color key="textColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -89,17 +86,17 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="px8-vH-E8P">
-                                        <rect key="frame" x="0.0" y="253" width="295" height="245"/>
+                                        <rect key="frame" x="0.0" y="253" width="343" height="245"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="agM-K1-1MZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="295" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="34"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Question Four" identifier="Question4Label" label="Question 4 Label"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cgZ-YB-VmK">
-                                                <rect key="frame" x="0.0" y="42" width="295" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="42" width="343" height="34.5"/>
                                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="0.24914383561643835" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Question Four Answer" identifier="Question4AnswerTextField" label="Question 4 Answer Text Field"/>
                                                 <color key="textColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -107,14 +104,14 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8sL-Vw-cIy">
-                                                <rect key="frame" x="0.0" y="84.5" width="295" height="34"/>
+                                                <rect key="frame" x="0.0" y="84.5" width="343" height="34"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Question Five" identifier="Question5Label" label="Question 5 Label"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uYI-s8-eVo">
-                                                <rect key="frame" x="0.0" y="126.5" width="295" height="34"/>
+                                                <rect key="frame" x="0.0" y="126.5" width="343" height="34"/>
                                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="0.24914383561643835" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Question Five Answer" identifier="Question5AnswerTextField" label="Question 5 Answer Text Field"/>
                                                 <color key="textColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -122,14 +119,14 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your name?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Gr-Nc-8Q5">
-                                                <rect key="frame" x="0.0" y="168.5" width="295" height="34.5"/>
+                                                <rect key="frame" x="0.0" y="168.5" width="343" height="34.5"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Question Six" identifier="Question6Label" label="Question 6 Label"/>
                                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="24"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QFW-rN-Bcm">
-                                                <rect key="frame" x="0.0" y="211" width="295" height="34"/>
+                                                <rect key="frame" x="0.0" y="211" width="343" height="34"/>
                                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="0.24914383561643835" colorSpace="calibratedRGB"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Question Six Answer" identifier="Question6AnswerTextField" label="Question 6 Answer Text Field"/>
                                                 <color key="textColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -157,21 +154,20 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="G3Q-c3-Z9j" secondAttribute="trailing" constant="8" id="6De-7F-uzJ"/>
+                            <constraint firstItem="JAS-vC-dTU" firstAttribute="trailing" secondItem="G3Q-c3-Z9j" secondAttribute="trailing" constant="8" id="6De-7F-uzJ"/>
                             <constraint firstItem="7Tf-VD-R1W" firstAttribute="top" secondItem="G3Q-c3-Z9j" secondAttribute="bottom" constant="8" id="7sz-GB-fak"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WeB-tq-xAb" secondAttribute="bottom" id="8Em-YA-xoc"/>
+                            <constraint firstItem="JAS-vC-dTU" firstAttribute="bottom" secondItem="WeB-tq-xAb" secondAttribute="bottom" id="8Em-YA-xoc"/>
                             <constraint firstItem="WeB-tq-xAb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="EGh-Ff-aUX"/>
-                            <constraint firstItem="7Tf-VD-R1W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="Hj8-VA-dWm">
-                                <variation key="widthClass=compact" constant="40"/>
-                            </constraint>
-                            <constraint firstAttribute="trailing" secondItem="WeB-tq-xAb" secondAttribute="trailing" id="LFf-Tp-Gaf"/>
-                            <constraint firstItem="G3Q-c3-Z9j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="NkB-Gq-ili"/>
-                            <constraint firstAttribute="trailing" secondItem="7Tf-VD-R1W" secondAttribute="trailing" constant="40" id="RYm-eE-jbv"/>
-                            <constraint firstItem="WeB-tq-xAb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="d3k-8y-oPV"/>
+                            <constraint firstItem="JAS-vC-dTU" firstAttribute="trailing" secondItem="WeB-tq-xAb" secondAttribute="trailing" id="LFf-Tp-Gaf"/>
+                            <constraint firstItem="G3Q-c3-Z9j" firstAttribute="leading" secondItem="JAS-vC-dTU" secondAttribute="leading" constant="8" id="NkB-Gq-ili"/>
+                            <constraint firstItem="WeB-tq-xAb" firstAttribute="leading" secondItem="JAS-vC-dTU" secondAttribute="leading" id="d3k-8y-oPV"/>
                             <constraint firstItem="WeB-tq-xAb" firstAttribute="top" secondItem="7Tf-VD-R1W" secondAttribute="bottom" constant="8" id="epT-OV-mfn"/>
-                            <constraint firstItem="G3Q-c3-Z9j" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="hSq-o5-8zP"/>
+                            <constraint firstItem="G3Q-c3-Z9j" firstAttribute="top" secondItem="JAS-vC-dTU" secondAttribute="top" id="hSq-o5-8zP"/>
+                            <constraint firstItem="JAS-vC-dTU" firstAttribute="trailing" secondItem="7Tf-VD-R1W" secondAttribute="trailing" constant="16" id="kCV-Ox-mFP"/>
+                            <constraint firstItem="7Tf-VD-R1W" firstAttribute="leading" secondItem="JAS-vC-dTU" secondAttribute="leading" constant="16" id="vEO-Rr-7fd"/>
                             <constraint firstItem="G3Q-c3-Z9j" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="zCy-9D-8yo"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="JAS-vC-dTU"/>
                     </view>
                     <connections>
                         <outlet property="keepGoingButton" destination="WeB-tq-xAb" id="9Al-yD-5v1"/>
@@ -197,10 +193,6 @@
         <scene sceneID="zzz-TW-TKc">
             <objects>
                 <viewController storyboardIdentifier="storyView" id="diY-iy-RDE" customClass="StoryViewController" customModule="MadLibs" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5KN-Vz-acn"/>
-                        <viewControllerLayoutGuide type="bottom" id="HTa-pB-lHb"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="2uc-Dy-6dM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -227,15 +219,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="iFR-c7-2vG" firstAttribute="top" secondItem="5KN-Vz-acn" secondAttribute="bottom" constant="8" id="1s2-na-q0P"/>
+                            <constraint firstItem="iFR-c7-2vG" firstAttribute="top" secondItem="mUZ-1u-ar1" secondAttribute="top" constant="8" id="1s2-na-q0P"/>
                             <constraint firstItem="QhH-Z8-uDU" firstAttribute="height" secondItem="2uc-Dy-6dM" secondAttribute="height" multiplier="0.1" id="7Mu-cb-IKQ"/>
-                            <constraint firstAttribute="trailing" secondItem="iFR-c7-2vG" secondAttribute="trailing" constant="24" id="CKd-50-feC"/>
-                            <constraint firstItem="iFR-c7-2vG" firstAttribute="leading" secondItem="2uc-Dy-6dM" secondAttribute="leading" constant="24" id="E82-24-F7p"/>
+                            <constraint firstItem="mUZ-1u-ar1" firstAttribute="trailing" secondItem="iFR-c7-2vG" secondAttribute="trailing" constant="24" id="CKd-50-feC"/>
+                            <constraint firstItem="iFR-c7-2vG" firstAttribute="leading" secondItem="mUZ-1u-ar1" secondAttribute="leading" constant="24" id="E82-24-F7p"/>
                             <constraint firstItem="QhH-Z8-uDU" firstAttribute="top" secondItem="iFR-c7-2vG" secondAttribute="bottom" constant="8" id="ELB-A7-8gV"/>
-                            <constraint firstAttribute="trailing" secondItem="QhH-Z8-uDU" secondAttribute="trailing" id="OK7-bw-U6q"/>
-                            <constraint firstItem="QhH-Z8-uDU" firstAttribute="leading" secondItem="2uc-Dy-6dM" secondAttribute="leading" id="d90-CY-YTt"/>
-                            <constraint firstItem="HTa-pB-lHb" firstAttribute="top" secondItem="QhH-Z8-uDU" secondAttribute="bottom" id="v6Z-RM-oGV"/>
+                            <constraint firstItem="mUZ-1u-ar1" firstAttribute="trailing" secondItem="QhH-Z8-uDU" secondAttribute="trailing" id="OK7-bw-U6q"/>
+                            <constraint firstItem="QhH-Z8-uDU" firstAttribute="leading" secondItem="mUZ-1u-ar1" secondAttribute="leading" id="d90-CY-YTt"/>
+                            <constraint firstItem="mUZ-1u-ar1" firstAttribute="bottom" secondItem="QhH-Z8-uDU" secondAttribute="bottom" id="v6Z-RM-oGV"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="mUZ-1u-ar1"/>
                     </view>
                     <connections>
                         <outlet property="storyTextLabel" destination="iFR-c7-2vG" id="edL-ME-4Sg"/>

@@ -21,7 +21,7 @@ struct AnimationManager {
     static func zoomQuestionsInFromLeft(_ labels: [UILabel]) {
         var delay: TimeInterval = 0
         for label in labels {
-            UIView.animate(withDuration: 2, delay: delay, animations: {
+            UIView.animate(withDuration: 1.5, delay: delay, animations: {
                 label.center.x += 1000
                 delay += 0.25
             })
