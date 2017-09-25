@@ -21,6 +21,7 @@
 		348316371F7966C300420C1B /* StoryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348316361F7966C300420C1B /* StoryViewControllerTests.swift */; };
 		3483163F1F7969F000420C1B /* MadLibsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3483163E1F7969F000420C1B /* MadLibsUITests.swift */; };
 		34AB5B4B1F6C479200D2541B /* FormTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AB5B4A1F6C479200D2541B /* FormTextFieldDelegate.swift */; };
+		34DC294C1F798C0F00A35694 /* ExtensionStringCapitalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DC294B1F798C0F00A35694 /* ExtensionStringCapitalization.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		3483163E1F7969F000420C1B /* MadLibsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MadLibsUITests.swift; sourceTree = "<group>"; };
 		348316401F7969F000420C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34AB5B4A1F6C479200D2541B /* FormTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextFieldDelegate.swift; sourceTree = "<group>"; };
+		34DC294B1F798C0F00A35694 /* ExtensionStringCapitalization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionStringCapitalization.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				34AB5B491F6C43A500D2541B /* Assets */,
 				3431B49A1E9BC63C0057ADDC /* Info.plist */,
 				34043D2D1F719E99006F2134 /* AnimationManager.swift */,
+				34DC294B1F798C0F00A35694 /* ExtensionStringCapitalization.swift */,
 			);
 			path = MadLibs;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				3431B4911E9BC63B0057ADDC /* FormViewController.swift in Sources */,
 				34043D2E1F719E99006F2134 /* AnimationManager.swift in Sources */,
 				3431B48F1E9BC63B0057ADDC /* AppDelegate.swift in Sources */,
+				34DC294C1F798C0F00A35694 /* ExtensionStringCapitalization.swift in Sources */,
 				3431B4A31E9BC9D90057ADDC /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

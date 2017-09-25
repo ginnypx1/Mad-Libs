@@ -89,7 +89,7 @@ class StoryViewControllerTests: XCTestCase {
         sut.storyPage = 0
         sut.tellStory(sut.tellStoryButton)
         let labelText = sut.story.story[1]
-        let expectedText = "  Once upon a time, one went for a walk in the 3.  Pretty soon, one came upon a house.  one knocked, and when no one answered, one walked right in."
+        let expectedText = "  Once upon a time, One went for a walk in the 3.  Pretty soon, One came upon a house.  One knocked, and when no one answered, One walked right in."
         XCTAssertEqual(labelText, expectedText)
         let buttonText = sut.tellStoryButton.title(for: .normal)
         let expectedButtonText = "Tell Me More"

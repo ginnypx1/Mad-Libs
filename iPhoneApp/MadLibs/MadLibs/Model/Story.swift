@@ -29,7 +29,7 @@ class Story {
     var timesViewed = 0
     
     func generateStory() {
-        let answer1 = answers[0]
+        let answer1 = answers[0].capitalizingFirstLetter()
         let answer2 = answers[1]
         let answer3 = answers[2]
         let answer4 = answers[3]
