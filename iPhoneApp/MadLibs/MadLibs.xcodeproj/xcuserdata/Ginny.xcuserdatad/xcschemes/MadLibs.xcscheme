@@ -40,6 +40,16 @@
                ReferencedContainer = "container:MadLibs.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3483163B1F7969F000420C1B"
+               BuildableName = "MadLibsUITests.xctest"
+               BlueprintName = "MadLibsUITests"
+               ReferencedContainer = "container:MadLibs.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

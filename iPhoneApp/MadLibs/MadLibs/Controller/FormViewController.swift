@@ -79,6 +79,7 @@ class FormViewController: UIViewController, UITextFieldDelegate {
         
         // reset view for next set of questions
         story.timesViewed += 1
+        labelCount = 6
         keepGoingButton.setTitle("Tell Me A Story", for: UIControlState.normal)
         askQuestions()
         
