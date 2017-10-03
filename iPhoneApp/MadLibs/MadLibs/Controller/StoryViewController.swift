@@ -32,14 +32,18 @@ class StoryViewController: UIViewController {
     // MARK: - Tell Story
     
     func displayStoryTitle() {
-        storyTextLabel.text = story.story[0]
+        let text = story.story[0]
+        storyTextLabel.text = text
+        storyTextLabel.accessibilityLabel = text
         storyTextLabel.textColor = UIColor.orange
         storyTextLabel.font = storyTextLabel.font.withSize(33)
         tellStoryButton.setTitle("Tell My Story", for: UIControlState.normal)
     }
     
     func displayEnd() {
-        storyTextLabel.text = story.story[storyPage]
+        let text = story.story[storyPage]
+        storyTextLabel.text = text
+        storyTextLabel.accessibilityLabel = text
         storyTextLabel.textColor = UIColor.orange
         storyTextLabel.textAlignment = .center
         storyTextLabel.font = storyTextLabel.font.withSize(33)
@@ -48,7 +52,9 @@ class StoryViewController: UIViewController {
     
     func displayNextPage() {
         AnimationManager.positionStoryTextOffscreen(storyTextLabel)
-        storyTextLabel.text = story.story[storyPage]
+        let text = story.story[storyPage]
+        storyTextLabel.text = text
+        storyTextLabel.accessibilityLabel = text
         storyTextLabel.textColor = UIColor.black
         storyTextLabel.font = storyTextLabel.font.withSize(20)
         storyTextLabel.textAlignment = .justified

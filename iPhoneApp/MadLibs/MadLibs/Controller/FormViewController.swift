@@ -28,6 +28,7 @@ class FormViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        AccessibilityManager.applyDynamicText(to: keepGoingButton)
         for textField in questionTextFields {
             textField.delegate = textFieldDelegate
         }
@@ -57,7 +58,9 @@ class FormViewController: UIViewController, UITextFieldDelegate {
     func askQuestions() {
         AnimationManager.positionLabelsOffscreen(questionLabels)
         for label in questionLabels {
-            label.text = story.questions[labelCount]
+            let question = story.questions[labelCount]
+            label.text = question
+            label.accessibilityLabel = question
             labelCount += 1
         }
         AnimationManager.zoomQuestionsInFromLeft(questionLabels)
