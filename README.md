@@ -31,6 +31,10 @@ Do you really not remember how to play Mad Libs?!?!
 
 Fill out the form, and you'll get a hilarious story.
 
+## Technical Information
+
+The "Mad Libs" iOS app has been updated for Swift 4.0 and iOS 11. It has unit and UI tests and VoiceOver and Dynamic Text accessibility features incorporated.
+
 ## Improvements
 
 Future versions of "Mad Libs" will offer more than one story.
